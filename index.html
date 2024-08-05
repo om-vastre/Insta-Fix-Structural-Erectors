@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteelonCall</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+       <div id="wrapper">
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="logo/Insta_fix_logo.jpeg" class="logo">
+                <div class="logo-text"> Insta Fix & Structural Erectors</div>
+            </div>
+            <div class="navitem">
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact_number">
+                    <span>Contact Number:</span>
+                    <span><b>+91 93711 86919</b></span>
+                </div>
+                </div>
+                <div class="cart-info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="cart_item">
+                        <span>Location</span>
+                        <span><b>T-121,MIDC,Bhosari</b></span>
+                    </div>
+                    
+                </div>
+                <div class="linkedin-info">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="linkedin-url">
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"> InstaFix & Structural Erectors</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="img_section">
+            <img src="image/steloimg.jpg" alt="">
+        </div>
+        <div class="achivement_container">
+            <div class="achivement">
+                <img class="achivement-icon" src="image\customer.svg" alt="Customers"></i>
+                <div class="achivement-number">🤝100+</div>
+                <div class="achivement-text">Happy Customers</div>
+            </div>
+            <div class="achivement">
+                <img class="achivement-icon" src="image\projects-done.svg" alt="Projects Completed"></i>
+                <div class="achivement-number">🎯50+</div>
+                <div class="achivement-text">Project Completions</div>
+            </div>
+            <div class="achivement">
+                <img class="achivement-icon" src="image\rating.svg" alt="Customer Rating"></i>
+                <div class="achivement-number">⭐4.7⭐</div>
+                <div class="achivement-text">Customer Rating</div>
+            </div>
+        </div>
+        <div class="products-section">
+            <h2 class="products-heading">Our Products</h2>
+            <p class="products-description">Checkout our extravaganza catalogue</p>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="image/img1.jfif" alt="Product 1" class="card-img">
+                    <div class="card-name">Railing</div>
+                    <div class="card-description">Railing was done around all the solar panels and it was around 3000m.
+                        <br>Time period one and a half months.
+                        <br>Client DY patil college pimpri</div>
+                </div>
+                <div class="card">
+                    <img src="image/img2.jfif" alt="Product 2" class="card-img">
+                    <div class="card-name">Shed fabricated platform</div>
+                    <div class="card-description">shed done on the eighth floor.
+                        <br>Client - Serum Institute, Poonawalla manjari.
+                        <br>Tonnage 250 tons.
+                        <br>Time period 3 months</div>
+                </div>
+                <div class="card">
+                    <img src="image/img3.jfif" alt="Product 3" class="card-img">
+                    <div class="card-name">Jacketing work for columnn strengthening</div>
+                    <div class="card-description">Jacketing work for columnn strengthening 
+                        <br>Vision one mall
+                        <br>10 tons
+                        <br>Lower basement columns jacketed</div>
+                </div>
+                <div class="card">
+                    <img src="image/img4.jfif" alt="Product 3" class="card-img">
+                    <div class="card-name">Conopy.</div>
+                    <div class="card-description">Construction 
+                        <br>Tonnage 10 tons 
+                        <br>Location near Alka talkies</div>
+                </div>
+                <div class="card">
+                    <img src="image/img5.jfif" alt="Product 3" class="card-img">
+                    <div class="card-name">Steel fabricated</div>
+                    <div class="card-description">Client - Poona blind men's association
+                        <br>Time period 6 months
+                        <br>Total area covered 4000 sq. Meters</div>
+                </div>
+                <div class="card">
+                    <img src="image/img6.jfif" alt="Product 3" class="card-img">
+                    <div class="card-name">Circular spiral staircase</div>
+                    <div class="card-description">Circular spiral staircase with no support in the middle
+                        Number of staircases 2</div>
+                </div>
+                <div class="card">
+                    <img src="image/img7.jfif" alt="Product 3" class="card-img">
+                    <div class="card-name">Steel fabricated platform</div>
+                    <div class="card-description">Steel fabricated platform with concrete encasing for machine placement
+                        <br>Company for which the platform has been made - Armacell
+                        <br>Duration of the project 3 months</div>
+                </div>
+            </div>
+        </div>
+
+       </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.card');
+    
+        cards.forEach(card => {
+            const description = card.querySelector('.card-description');
+            const readMore = document.createElement('span');
+            readMore.textContent = '...read more';
+            readMore.classList.add('read-more');
+            readMore.addEventListener('click', () => {
+                description.classList.toggle('expanded');
+                readMore.textContent = description.classList.contains('expanded') ? '...read less' : '...read more';
+            });
+    
+            description.appendChild(readMore);
+        });
+    });
+    </script>
+    
+</html>
